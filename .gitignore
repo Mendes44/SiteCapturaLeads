@@ -1,0 +1,6 @@
+# Arquivo com chaves
+api.txt
+
+# Variáveis de ambiente
+.env
+.env.local

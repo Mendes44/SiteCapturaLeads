@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box
+}
+
+body{
+    text-align: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+#leadForm {
+    width: 90%;
+    max-width: 400px;
+
+    padding: 32px;
+
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    text-align: center;
+    color: #333;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #333;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #aaa;
+    border-radius: 6px;
+
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.campo input:focus {
+    border: 2px;
+    border-color: chocolate;
+    box-shadow: 0 0 0 3px rgba(210, 105, 30 ,0.2); /*Aqui estou deixando o efeito mais suave*/
+}
+
+#myButton {
+    width: 100%;
+    font-size: 26px;
+    height: 60px;
+    padding: 13px;
+    border-radius: 6px;
+
+    background-color: chocolate;
+    color: black;
+    cursor: pointer;
+
+    /*Aqui estou deixando o efeito mais suave*/
+    transition: 0.3s;
+}
+
+#myButton:hover {
+    background-color: darkorange;
+    color: white;
+
+    /*Aumenta o botão - acima de 1.0 o botão fica maior e abaixo fica menor */
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#myButton:active {
+   transform: scale(0.95);
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#myButton:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#mensagem {
+    min-height: 20px;
+    margin-bottom: 0;
+
+    text-align: center;
+}
